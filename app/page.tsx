@@ -1,4 +1,4 @@
-﻿import { Hero } from "@/components/Hero";
+﻿import { Hero } from "../components/Hero";
 export default function Page(){
   const demo = [
     { id: "1", title: "#BookTok Tee", price_cents: 2499, image: "/logo.svg" },
