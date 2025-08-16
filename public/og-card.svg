@@ -1,0 +1,7 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
+  <rect width="1200" height="630" fill="#FAFAFC"/>
+  <rect x="0" y="520" width="600" height="110" fill="#FF4F7D"/>
+  <rect x="600" y="520" width="600" height="110" fill="#00B4D8"/>
+  <text x="60" y="260" font-family="Inter, sans-serif" font-size="64" fill="#0F0F12" font-weight="800">HashTee — Hashtag-only merch</text>
+  <text x="60" y="330" font-family="Inter, sans-serif" font-size="40" fill="#555">Tees • Mugs • Bags • Hats</text>
+</svg>

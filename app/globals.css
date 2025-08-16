@@ -1,0 +1,4 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;600;800&display=swap");
+:root{ --brand:#FF4F7D; --accent:#00B4D8; --ink:#0F0F12; }
+html,body{ color:var(--ink); background:#FAFAFC; }
+*{ box-sizing:border-box; }
