@@ -1,7 +1,11 @@
 ﻿import type { Metadata } from "next";
 import "./globals.css";
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.APP_BASE_URL || "http://localhost:3000"),
+  metadataBase: (() => {
+  const raw = process.env.APP_BASE_URL ?? 'http://localhost:3000';
+  const cleaned = raw.replace(/^.*?=\s*/, '').trim(); // strip 'KEY =' if pasted
+  try { return new URL(cleaned); } catch { return new URL('http://localhost:3000'); }
+})(),
   title: "HashTee — Hashtag-only merch",
   description: "Tees, mugs, bags, and hats auto-created from trending hashtags.",
   openGraph: {
@@ -15,3 +19,4 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (<html lang="en"><body>{children}</body></html>);
 }
+
